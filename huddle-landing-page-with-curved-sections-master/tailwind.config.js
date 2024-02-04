@@ -16,6 +16,11 @@ module.exports = {
       fontFamily: {
         "headings": "'Poppins', sans-serif",
         "body": "'Open Sans', sans-serif",
+      },
+      backgroundImage: {
+        'mobileSectionTop': "url('./images/bg-section-top-mobile-1.svg')",
+        'footerMobile': "url('./images/bg-footer-top-mobile.svg')",
+        'footerDesktop': "url('./images/wave.svg')",
       }
     },
   },
