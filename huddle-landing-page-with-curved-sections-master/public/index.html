@@ -1,34 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body>
-  Try it free
 
-  Build The Community Your Fans Will Love
+<body class="font-body">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+  <!-- NAV BAR -->
+  <nav class="m-4">
+    <ul class="flex justify-between">
+      <li>
+        <img class="w-48" src="./images/logo.svg" alt="logo">
+      </li>
+      <li>
+        <button class="p-2 text-lightPink text-sm rounded-full border-2 border-lightPink">Try it free</button>
+      </li>
+    </ul>
+  </nav>
 
-  Get Started For Free
+  <main class="ml-6 mr-6 mt-14">
 
-  1.4k+
-  Communities Formed
+    <!-- INTRO DIV -->
+    <div class="text-veryDarkCyan text-center">
+      <h1 class="font-bold font-headings text-2xl">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="pt-6 font-semibold text pb-10">
+        Huddle re-imagines the way we build communities. You have a voice, but so does
+        your audience. Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="bg-pink rounded-full px-8 py-4 text-white text-lg font-bold">
+        Get Started For Free
+      </button>
+    </div>
 
-  2.7m+
-  Messages Sent
+    <!-- MOCKUP DIV -->
+    <div class="pt-20">
+      <img src="./images/screen-mockups.svg" alt="mockup">
+
+      <!-- flex container  -->
+      <div class="pt-20 text-center">
+        <!-- community div -->
+        <div>
+          <img class="w-10 ml-28" src="./images/icon-communities.svg" alt="community">
+          <p class="font-bold text-3xl text-veryDarkCyan">
+            1.4k+
+          </p>
+          <p class="text-gray-400">
+            Communities Formed
+          </p>
+        </div>
+        <!-- messages div -->
+        <div class="pt-10">
+          <img class="w-10 ml-28" src="./images/icon-messages.svg" alt="message">
+          <p class="font-bold text-3xl text-veryDarkCyan">
+            2.7m+
+          </p>
+          <p class="text-gray-400">
+            Messages Sent
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+</body>
+
+</html>
+
+<!-- 
+  
+
+  
+
+  
+  
+
+ 
+  
+
+  
+  
 
   Grow Together
   Generate meaningful discussions with your audience and build a strong, loyal community. 
@@ -56,12 +117,4 @@
   send you spam or pass on your email address
 
   Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
-</html>
+ -->
