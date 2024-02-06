@@ -26,11 +26,11 @@ Users should be able to:
 
 #### Desktop Version
 
-![](/public/images/desktop.png)
+![](./public/images/desktop.png)
 
 #### Mobile Version
 
-![](/public/images/mobile.png)
+![](./public/images/mobile.png)
 
 ### Links
 
