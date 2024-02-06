@@ -24,14 +24,14 @@
     </ul>
   </nav>
 
-  <main class="ml-6 mr-6 mt-14">
+  <main class="ml-6 mr-6 mt-14 md:w-9/12 md:ml-48">
 
     <!-- INTRO DIV -->
     <div class="text-veryDarkCyan text-center">
       <h1 class="font-bold font-headings text-2xl">
         Build The Community Your Fans Will Love
       </h1>
-      <p class="pt-6 font-semibold text pb-10">
+      <p class="pt-6 font-semibold text pb-10 md:w-96 md:ml-96">
         Huddle re-imagines the way we build communities. You have a voice, but so does
         your audience. Create connections with your users as you engage in genuine discussion.
       </p>
@@ -41,11 +41,11 @@
     </div>
 
     <!-- MOCKUP DIV -->
-    <div class="pt-20">
+    <div class="pt-20 ">
       <img src="./images/screen-mockups.svg" alt="mockup">
 
       <!-- flex container  -->
-      <div class="pt-20 text-center">
+      <div class="pt-20 text-center md:flex md:pr-20 md:pl-20 md:justify-between">
         <!-- community div -->
         <div>
           <img class="w-10 ml-28" src="./images/icon-communities.svg" alt="community">
@@ -57,7 +57,7 @@
           </p>
         </div>
         <!-- messages div -->
-        <div class="pt-20">
+        <div class="pt-20 md:pt-0">
           <img class="w-10 ml-28" src="./images/icon-messages.svg" alt="message">
           <p class="font-bold text-3xl text-veryDarkCyan">
             2.7m+
@@ -70,14 +70,14 @@
     </div>
 
     <!-- GROW TOGETHER DIV -->
-    <div class="pt-20">
-      <img src="./images/illustration-grow-together.svg" alt="two people">
+    <div class="pt-20 md:flex flex-row-reverse">
+      <img class="md:w-96" src="./images/illustration-grow-together.svg" alt="two people">
 
-      <div class="pt-10 text-veryDarkCyan text-center">
-        <h2 class="font-headings text-lg">
+      <div class="pt-10 text-veryDarkCyan text-center md:text-left md:pl-20 md:pr-20">
+        <h2 class="font-headings text-lg md:text-xl">
           Grow Together
         </h2>
-        <p class="text-sm pt-6">
+        <p class="text-sm pt-6 md:text-base">
           Generate meaningful discussions with your audience and build a strong, loyal community.
           Think of the insightful conversations you miss out on with a feedback form.
         </p>
@@ -86,14 +86,14 @@
 
 
     <!-- FLOWING CONVERSATIONS DIV -->
-    <div class="pt-20">
-      <img src="./images/illustration-flowing-conversation.svg" alt="three people">
+    <div class="pt-20 md:flex ">
+      <img class="md:w-96 md:ml-10" src="./images/illustration-flowing-conversation.svg" alt="three people">
 
-      <div class="pt-10 text-veryDarkCyan text-center">
-        <h2 class="font-headings text-lg">
+      <div class="pt-10 text-veryDarkCyan text-center md:text-left md:pl-20">
+        <h2 class="font-headings text-lg md:text-xl">
           Flowing Conversations
         </h2>
-        <p class="text-sm pt-6">
+        <p class="text-sm pt-6 md:text-base">
           You wouldn't paginate a conversation in real life, so why do it online? Our threads have
           just-in-time loading for a more natural flow.
         </p>
@@ -101,14 +101,14 @@
     </div>
 
     <!-- YOUR USERS DIV -->
-    <div class="pt-20">
-      <img src="./images/illustration-your-users.svg" alt="three people">
+    <div class="pt-20 md:flex flex-row-reverse">
+      <img class="md:w-96" src="./images/illustration-your-users.svg" alt="three people">
 
-      <div class="pt-10 text-veryDarkCyan text-center">
-        <h2 class="font-headings text-lg">
+      <div class="pt-10 text-veryDarkCyan text-center md:text-left md:pl-20 md:pr-20">
+        <h2 class="font-headings text-lg md:text-xl">
           Your Users
         </h2>
-        <p class="text-sm pt-6">
+        <p class="text-sm pt-6 md:text-base">
           It takes no time at all to integrate Huddle with your app's authentication solution. This means,
           once signed in to your app, your users can start chatting immediately.
         </p>
@@ -129,10 +129,10 @@
 
   <!-- FOOTER -->
 
-  <footer class="bg-footerMobile md:bg-footerDesktop bg-no-repeat bg-cover text-white pl-4 pr-4 md:flex">
+  <footer class="bg-footerDesktop bg-no-repeat bg-cover text-white pl-4 pr-4 md:flex flex-row-reverse justify-around">
 
     <!-- newsletter div  -->
-    <div class="pt-20">
+    <div class="pt-20 md:w-80">
       <h3 class="font-headings pb-2">
         Newsletter
       </h3>
@@ -140,14 +140,16 @@
         To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
     send you spam or pass on your email address
       </p>
-      <input type="email" name="email" class="px-20 py-1 rounded-sm">
-      <button class="bg-pink mt-4 ml-48 px-9 py-2 text-sm font-headings rounded-sm shadow-sm shadow-white">
+      <div class="md:flex">
+      <input type="email" name="email" class="px-20 md:px-10 py-1 rounded-sm text-black">
+      <button class="bg-pink mt-4 ml-48 md:ml-5 px-9 py-2 text-sm font-headings rounded-sm shadow-sm shadow-white">
         Subscribe
       </button>
     </div>
+    </div>
 
     <!-- huddle div -->
-    <div class="text-white pt-20">
+    <div class="text-white pt-20  md:pr-20 md:w-80">
 
       <div class="flex">
       <img class="w-10" src="./images/icon-messages.svg" alt="logo">
