@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="output.css">
 </head>
-<body>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+<body  x-data="{ currentSection: 1 }">
+  <main
+    class="bg-purple bg-no-repeat bg-contain md:flex flex-row-reverse justify-between items-center md:m-20 md:bg-right">
 
-  Tanya Sinclair
-  UX Engineer
+    <!-- Tanya Sinclair div -->
+    <!-- picture div -->
+    <section class="m-8" x-show="currentSection === 1">
+      <img class="rounded-lg" src="./images/image-tanya.jpg" alt="pic of tanya">
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
+      <div class="flex gap-10 bg-white rounded-full justify-center w-28 ml-24 py-4 relative z-0 bottom-4">
+        <img src="./images/icon-prev.svg" alt="prev" @click="currentSection = 2">
+        <img src="./images/icon-next.svg" alt="next" @click="currentSection = 2">
+      </div>
+    </section>
 
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <!-- Text div -->
+    <div class="bg-quotes bg-no-repeat ml-5 mr-5 md:w-1/2 text-center md:text-left text-darkBlue" x-show="currentSection === 1">
+      <p class="md:text-size">
+        “ I’ve been interested in coding for a while but never taken the jump, until now.
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+        excited about the future. ”
+      </p>
+      <div class="md:flex gap-2">
+      <p class="pt-4 font-bold text-lg md:text-xl">
+        Tanya Sinclair
+      </p>
+      <p class="text-grayishBlue pb-4 text-lg md:text-xl md:pt-4">
+        UX Engineer
+      </p>
+    </div>
+    </div>
+
+    <!-- John Takpor div -->
+
+    <!-- picture div -->
+    <section class="m-8" x-show="currentSection === 2">
+      <img class="rounded-lg" src="./images/image-john.jpg" alt="pic of tanya">
+
+      <div class="flex gap-10 bg-white rounded-full justify-center w-28 ml-24 py-4 relative z-0 bottom-4">
+        <img src="./images/icon-prev.svg" alt="prev" @click="currentSection = 1">
+        <img src="./images/icon-next.svg" alt="next" @click="currentSection = 1">
+      </div>
+    </section>
+
+    <!-- Text div -->
+    <div class="bg-quotes bg-no-repeat ml-5 mr-5 md:w-1/2 text-center md:text-left text-darkBlue" x-show="currentSection === 2">
+      <p class="md:text-size">
+        “ If you want to lay the best foundation possible I’d recommend taking this course.
+        The depth the instructors go into is incredible. I now feel so confident about
+        starting up as a professional developer. ”
+      </p>
+      <div class="md:flex gap-2">
+      <p class="pt-4 font-bold text-lg md:text-xl">
+        John Tarkpor
+      </p>
+      <p class="text-grayishBlue pb-4 text-lg md:text-xl md:pt-4">
+        Junior Front-end Developer
+      </p>
+    </div>
+    </div>
+
+
+
+  </main>
+
+
+
 </body>
+
 </html>

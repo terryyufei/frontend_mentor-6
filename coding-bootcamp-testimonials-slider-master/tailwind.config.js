@@ -15,6 +15,11 @@ module.exports = {
       },
       fontSize: {
         'size': '32px'
+      },
+      backgroundImage: {
+        'purple': "url('./images/pattern-bg.svg')",
+        'quotes': "url('./images/pattern-quotes.svg')",
+        'curve': "url('./images/pattern-curve.svg')",
       }
     },
   },
